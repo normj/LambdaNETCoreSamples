@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRuntimeAspNetCore", "CustomRuntimeAspNetCore.csproj", "{8AB991E8-AB1C-40C4-804F-6A11AE6E77F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRuntimeAspNetCore22", "CustomRuntimeAspNetCore22.csproj", "{8AB991E8-AB1C-40C4-804F-6A11AE6E77F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

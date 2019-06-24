@@ -16,13 +16,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
 
-namespace CustomRuntimeAspNetCore
+namespace CustomRuntimeAspNetCore22
 {
     /// <summary>
     /// This class extends from APIGatewayProxyFunction which contains the method FunctionHandlerAsync which is the 
-    /// actual Lambda function entry point. The Lambda handler field should be set to
-    /// 
-    /// CustomRuntimeAspNetCore::CustomRuntimeAspNetCore.LambdaEntryPoint::FunctionHandlerAsync
+    /// actual Lambda function entry point. 
     /// </summary>
     public class LambdaEntryPoint :
         // When using an ELB's Application Load Balancer as the event source change 
@@ -106,7 +104,7 @@ using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.RuntimeSupport;
 using Amazon.Lambda.Serialization.Json;
 
-namespace CustomRuntimeAspNetCore
+namespace CustomRuntimeAspNetCore22
 {
     /// <summary>
     /// The Main function can be used to run the ASP.NET Core application locally using the Kestrel webserver.
@@ -185,7 +183,7 @@ This can be configured in the `aws-lambda-tools-defaults.json` by setting the `m
     "profile":"",
     "region" : "us-west-2",
     "configuration" : "Release",
-    "s3-prefix"     : "CustomRuntimeAspNetCore/",
+    "s3-prefix"     : "CustomRuntimeAspNetCore22/",
     "template"      : "serverless.template",
     "template-parameters" : "",
     "msbuild-parameters": "--self-contained true"

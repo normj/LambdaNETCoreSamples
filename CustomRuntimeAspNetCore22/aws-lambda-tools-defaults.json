@@ -12,7 +12,7 @@
     "profile":"",
     "region" : "us-west-2",
 	"configuration" : "Release",
-	"s3-prefix"     : "CustomRuntimeAspNetCore/",
+	"s3-prefix"     : "CustomRuntimeAspNetCore22/",
 	"template"      : "serverless.template",
 	"template-parameters" : "",
 	"msbuild-parameters": "--self-contained true"

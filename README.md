@@ -2,4 +2,4 @@
 
 | Name | Description|
 |------| -----------|
-| [CustomRuntimeAspNetCore](./CustomRuntimeAspNetCore/) | An ASP.NET Core 2.2 project configured to use Amazon.Lambda.RuntimeSupport and deployed using Lambda's custom runtime feature. |
+| [CustomRuntimeAspNetCore22](./CustomRuntimeAspNetCore22/) | An ASP.NET Core 2.2 project configured to use Amazon.Lambda.RuntimeSupport and deployed using Lambda's custom runtime feature. |

@@ -11,7 +11,7 @@ using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.RuntimeSupport;
 using Amazon.Lambda.Serialization.Json;
 
-namespace CustomRuntimeAspNetCore
+namespace CustomRuntimeAspNetCore22
 {
     /// <summary>
     /// The Main function can be used to run the ASP.NET Core application locally using the Kestrel webserver.
