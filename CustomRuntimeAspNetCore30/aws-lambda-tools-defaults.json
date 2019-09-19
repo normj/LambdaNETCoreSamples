@@ -7,12 +7,12 @@
         "All the command line options for the Lambda command can be specified in this file."
     ],
     "profile"     : "default",
-    "region"      : "us-west-2",
+    "region"      : "",
     "configuration" : "Release",
     "s3-prefix"     : "CustomRuntimeAspNetCore30/",
     "template"      : "serverless.template",
     "template-parameters" : "",
-    "msbuild-parameters"  : "--self-contained true",
+    "msbuild-parameters"  : "--self-contained true -r rhel.7.2-x64",
     "framework"           : "netcoreapp3.0",
     "s3-bucket"           : "",
     "stack-name"          : "CustomRuntimeAspNetCore30"

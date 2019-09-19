@@ -23,6 +23,7 @@
 				"Policies": [ "AWSLambdaFullAccess" ],
 				"Environment" : {
 					"Variables" : {
+						"LAMBDA_NET_SERIALIZER_DEBUG" : "true"
 					}
 				},
 				"Events": {
