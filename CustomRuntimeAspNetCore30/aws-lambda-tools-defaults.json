@@ -12,7 +12,7 @@
     "s3-prefix"     : "CustomRuntimeAspNetCore30/",
     "template"      : "serverless.template",
     "template-parameters" : "",
-    "msbuild-parameters"  : "--self-contained true -r rhel.7.2-x64",
+    "msbuild-parameters"  : "--self-contained true -r rhel.7.2-x64 /p:AssemblyName=bootstrap",
     "framework"           : "netcoreapp3.0",
     "s3-bucket"           : "",
     "stack-name"          : "CustomRuntimeAspNetCore30"
