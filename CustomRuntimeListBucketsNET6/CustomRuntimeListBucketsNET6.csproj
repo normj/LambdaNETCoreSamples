@@ -3,6 +3,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <LangVersion>latest</LangVersion>
+	<ImplicitUsings>enable</ImplicitUsings>
     <AWSProjectType>Lambda</AWSProjectType>
 	  
 	<!-- Enable trimming to reduce package size of self contained publish -->
