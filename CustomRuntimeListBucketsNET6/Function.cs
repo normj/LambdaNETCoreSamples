@@ -9,6 +9,7 @@ using Amazon.S3.Model;
 
 using var s3Client = new AmazonS3Client();
 
+// Delegate that returns the list of S3 buckets.
 async Task<List<S3Bucket>> ListBucketsDelegate(ILambdaContext context) => (await s3Client.ListBucketsAsync()).Buckets;
 
 // Startup Lambda .NET runtime
