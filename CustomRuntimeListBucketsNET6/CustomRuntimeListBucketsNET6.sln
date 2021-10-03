@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRuntimeListBucketsNET6", "CustomRuntimeListBucketsNET6.csproj", "{48DC0E9B-13C0-49B6-8219-1E5FFBD68690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRuntimeAspNetCoreNET6", "..\CustomRuntimeAspNetCoreNET6\CustomRuntimeAspNetCoreNET6.csproj", "{56E434CC-4615-4E8A-AB45-2C2882E42F29}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{48DC0E9B-13C0-49B6-8219-1E5FFBD68690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48DC0E9B-13C0-49B6-8219-1E5FFBD68690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48DC0E9B-13C0-49B6-8219-1E5FFBD68690}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56E434CC-4615-4E8A-AB45-2C2882E42F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56E434CC-4615-4E8A-AB45-2C2882E42F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56E434CC-4615-4E8A-AB45-2C2882E42F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56E434CC-4615-4E8A-AB45-2C2882E42F29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
