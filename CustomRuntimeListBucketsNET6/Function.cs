@@ -9,6 +9,7 @@ using var s3Client = new AmazonS3Client();
 // Lambda function that returns the list of S3 buckets.
 var listS3BucketsLambdaFunction = async (ILambdaContext context) =>
 {
+    context.Logger.LogLine("Making SDK call to get S3 buckets");
     return (await s3Client.ListBucketsAsync()).Buckets;
 };
 
