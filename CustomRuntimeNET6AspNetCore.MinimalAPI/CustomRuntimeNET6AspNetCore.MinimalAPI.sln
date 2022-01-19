@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRuntimeNET6AspNetCore.MinimalAPI", "CustomRuntimeNET6AspNetCore.MinimalAPI.csproj", "{7421640F-7FD0-47FA-8BE8-311D213EE031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A16B35C7-7539-4E81-AACE-82DEF667CF7A}
+	EndGlobalSection
+EndGlobal
