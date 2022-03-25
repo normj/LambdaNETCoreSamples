@@ -12,9 +12,12 @@ pool:
 steps:
 
 - script: |
+    pwd
     ls -l /usr/bin/dotnet
+    ls -l /usr/share/dotnet
+    ls -l ~/.dotnet/tools    
     dotnet tool install -g Amazon.Lambda.Tools
     cd CustomRuntimeNET6AspNetCore
-    /usr/share/dotnet/tools/dotnet-lambda package
+    ~/.dotnet/tools/dotnet-lambda package
 
   displayName: 'Lambda Tools Test'
