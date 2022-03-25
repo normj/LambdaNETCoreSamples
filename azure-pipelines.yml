@@ -9,8 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+steps:
+
 - script: |
-    ls -l /usr/bin
+    ls -l /usr/bin/dotnet
     dotnet tool install -g Amazon.Lambda.Tools
     cd CustomRuntimeNET6AspNetCore
     dotnet lambda package
