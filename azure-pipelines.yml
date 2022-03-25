@@ -9,13 +9,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - script: |
+    ls -l /usr/bin
     dotnet tool install -g Amazon.Lambda.Tools
     cd CustomRuntimeNET6AspNetCore
     dotnet lambda package
 
-  displayName: 'Run a multi-line script'
+  displayName: 'Lambda Tools Test'
