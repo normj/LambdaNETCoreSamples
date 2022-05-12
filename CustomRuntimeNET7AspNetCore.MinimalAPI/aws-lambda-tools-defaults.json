@@ -8,7 +8,7 @@
   "profile": "default",
   "region": "us-west-2",
   "configuration": "Release",
-  "s3-prefix": "CustomRuntimeNET6AspNetCore.MinimalAPI/",
+  "s3-prefix": "CustomRuntimeNET7AspNetCore.MinimalAPI/",
   "template": "serverless.template",
   "template-parameters": "",
   "msbuild-parameters": "--self-contained true"

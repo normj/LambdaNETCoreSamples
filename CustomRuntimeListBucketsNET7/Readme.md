@@ -1,14 +1,14 @@
-# Sample .NET 6 Custom Runtime Lambda Function
+# Sample .NET 7 Custom Runtime Lambda Function
 
 This project is configured to be deployed to AWS Lambda as a custom runtime. It uses the NuGet package 
 [Amazon.Lambda.RuntimeSupport](https://github.com/aws/aws-lambda-dotnet/tree/master/Libraries/src/Amazon.Lambda.RuntimeSupport)
 as the .NET Lambda runtime.
 
 In my observations if you turn on the trimming and ready to run features as describe below the cold start performance
-for a .NET 6 custom runtime is on par with a .NET Core 3.1 managed runtime. Would love to hear other people's findings.
+for a .NET 7 custom runtime is on par with a .NET Core 3.1 managed runtime. Would love to hear other people's findings.
 
 ## Deploying to Lambda
-The easiest way to deploy a .NET 6 Custom Runtime Lambda function is to use the [Amazon.Lambda.Tools](https://www.nuget.org/packages/Amazon.Lambda.Tools/) .NET CLI tool. 
+The easiest way to deploy a .NET 7 Custom Runtime Lambda function is to use the [Amazon.Lambda.Tools](https://www.nuget.org/packages/Amazon.Lambda.Tools/) .NET CLI tool. 
 To install the tool use the following command:
 ```
     dotnet tool install -g Amazon.Lambda.Tools
@@ -32,11 +32,11 @@ dotnet publish command to included the .NET Runtime.
 ### Trimming the size
 
 Since this is a self contained publish including the .NET runtime the deployment bundle is larger then a deployment bundle for a 
-managed runtime like .NET Core 3.1. By default the hello world Lambda function is about 33 Megs. .NET 6 has new tricks up 
+managed runtime like .NET Core 3.1. By default the hello world Lambda function is about 33 Megs. .NET 7 has new tricks up 
 its sleeve for reducing the size with its [Trimming features](https://docs.microsoft.com/en-us/dotnet/core/deploying/trimming-options).
 
 In the csproj file trimming has been enabled by setting the `PublishTrimmed` property to true. The default 
-trimming mode in .NET 6 is `link` mode which actually trims out unused code from assemblies. This can reduce the 
+trimming mode in .NET 7 is `link` mode which actually trims out unused code from assemblies. This can reduce the 
 hello world Lambda function from 33 megs to 11 megs. In your particular Lambda function you might find this 
 setting is too aggressive and in that case you should set `TrimMode` to `copyused` which trims at an 
 assembly level or turn off trimming.
@@ -47,7 +47,7 @@ R2R is the process of converting assemblies from the agnostic IL to machine spec
 normally happen at startup of the application which can be costly for cold starts but R2R can greatly improve the startup.
 R2R has been around for quite sometime but it has always been awkward to use especially from a development environment.
 
-As mentioned in the .NET 6 [RC1 blog post](https://devblogs.microsoft.com/dotnet/announcing-net-6-release-candidate-1/#crossgen2)
+As mentioned in the .NET 7 [RC1 blog post](https://devblogs.microsoft.com/dotnet/announcing-net-7-release-candidate-1/#crossgen2)
 there is a new tool to generate R2R images called crossgen2. This makes it really easy to create R2R images of your 
 assemblies. All that you have to do is set the `PublishReadyToRun` property to `true` in the project file. Unlike 
 past versions of .NET you no longer have to build on Linux to turn this feature. You can develop on any platform and 
@@ -65,7 +65,7 @@ the list of S3 bucket. Since this is a custom runtime the programming model is a
 In a custom runtime the project is a executable console application that contains a `main` function to bootstrap
 the Lambda runtime.
 
-Since this is .NET 6 we can take advantage of all of the latest C# features like top level statements to reduce the 
+Since this is .NET 7 we can take advantage of all of the latest C# features like top level statements to reduce the 
 boiler plate code to a tiny amount.
 
 

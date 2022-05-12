@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRuntimeNET6AspNetCore.MinimalAPI", "CustomRuntimeNET6AspNetCore.MinimalAPI.csproj", "{7421640F-7FD0-47FA-8BE8-311D213EE031}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRuntimeNET7AspNetCore", "CustomRuntimeNET7AspNetCore.csproj", "{6A5DE8CD-1C23-4357-9372-C8F8B8BA1E19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7421640F-7FD0-47FA-8BE8-311D213EE031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5DE8CD-1C23-4357-9372-C8F8B8BA1E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5DE8CD-1C23-4357-9372-C8F8B8BA1E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5DE8CD-1C23-4357-9372-C8F8B8BA1E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5DE8CD-1C23-4357-9372-C8F8B8BA1E19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A16B35C7-7539-4E81-AACE-82DEF667CF7A}
+		SolutionGuid = {EA057086-EF19-4249-875C-BE85A04FB4AE}
 	EndGlobalSection
 EndGlobal

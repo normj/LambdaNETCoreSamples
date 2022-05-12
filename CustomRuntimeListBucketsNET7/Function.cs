@@ -7,13 +7,13 @@ using Amazon.S3;
 using var s3Client = new AmazonS3Client();
 
 // Lambda function that returns the list of S3 buckets.
-var listS3BucketsLambdaFunction = async (ILambdaContext context) =>
+var handler = async (ILambdaContext context) =>
 {
     context.Logger.LogLine("Making SDK call to get S3 buckets");
     return (await s3Client.ListBucketsAsync()).Buckets;
 };
 
 // Startup Lambda .NET runtime
-using var handlerWrapper = HandlerWrapper.GetHandlerWrapper(listS3BucketsLambdaFunction, new DefaultLambdaJsonSerializer());
-using var bootstrap = new LambdaBootstrap(handlerWrapper);
-await bootstrap.RunAsync();
+await LambdaBootstrapBuilder.Create(handler, new DefaultLambdaJsonSerializer())
+    .Build()
+    .RunAsync();

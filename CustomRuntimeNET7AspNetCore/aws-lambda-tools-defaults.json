@@ -9,7 +9,7 @@
     "profile"     : "default",
     "region"      : "us-west-2",
     "configuration" : "Release",
-    "s3-prefix"     : "CustomRuntimeNET6AspNetCore/",
+    "s3-prefix"     : "CustomRuntimeNET7AspNetCore/",
     "template"      : "serverless.template",
     "template-parameters" : "",
     "msbuild-parameters"  : "--self-contained true"

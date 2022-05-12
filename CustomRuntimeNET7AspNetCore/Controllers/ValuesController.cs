@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CustomRuntimeNET6AspNetCore.Controllers
+namespace CustomRuntimeNET7AspNetCore.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase

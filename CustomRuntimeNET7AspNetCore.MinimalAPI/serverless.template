@@ -8,7 +8,7 @@
     "AspNetCoreFunction": {
       "Type": "AWS::Serverless::Function",
       "Properties": {
-        "Handler": "CustomRuntimeNET6AspNetCore.MinimalAPI",
+        "Handler": "CustomRuntimeNET7AspNetCore.MinimalAPI",
         "Runtime": "provided.al2",
         "CodeUri": "",
         "MemorySize": 256,
