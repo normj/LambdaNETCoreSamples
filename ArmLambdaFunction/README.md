@@ -52,8 +52,8 @@ to `arm64`.
 
 ## .NET 5 and 6 with Custom Runtimes
 
-If you want to use .NET 5 or 6 on Lambda today you would use Lambda custom runtime support. I 
-previously talked about how to use .NET 6 and custom runtimes [here](https://github.com/normj/LambdaNETCoreSamples/tree/master/CustomRuntimeListBucketsNET6).
+If you want to use .NET 7 on Lambda today you would use Lambda custom runtime support. I 
+previously talked about how to use .NET 7 and custom runtimes [here](https://github.com/normj/LambdaNETCoreSamples/tree/master/CustomRuntimeListBucketsNET7).
 
 As of the time of writing there is an issue when deploying .NET custom runtime Lambda functions 
 with Arm due to .NET requiring version 53 of the native dependency libicu for Arm and Amazon Linux 2 has 
